@@ -201,3 +201,43 @@ nav ul li a:hover {
 .nav-link:hover {
   color: #ffffff;
 }
+/* Footer Styles */
+footer {
+  background-color: #111; /* deep black */
+  color: #00bfff; /* vibrant orange */
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border-top: 2px solid #00bfff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 10px 0 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.7rem;
+}
+
+.footer-nav li a {
+  color: #00bfff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav li a:hover {
+  color: #ffffff;
+}
