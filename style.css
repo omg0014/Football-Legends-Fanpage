@@ -85,12 +85,24 @@ nav ul li a:hover {
   justify-content: space-between;
   margin: 60px 0;
   padding: 30px;
-  border-bottom: 1px solid #333;
   gap: 20px;
+  border-radius: 15px;
+  background-color: #222; /* Default card background */
+  transition: all 0.4s ease-in-out; /* Smooth hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Alternate direction for even children */
 .bio:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+/* Card hover effect */
+.bio:hover {
+  transform: scale(1.03);
+  background-color: #444; /* Grey background on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .bio img {
@@ -100,12 +112,13 @@ nav ul li a:hover {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
-  transition: transform 0.4s ease-in-out; /* Smooth transition */
+  transition: transform 0.4s ease-in-out;
 }
 
+/* Remove individual image zoom if entire card zooms */
 .bio img:hover {
-  transform: scale(1.08); /* Slight zoom on hover */
-  cursor: pointer;
+  transform: none;
+  cursor: inherit;
 }
 
 .bio-text {
@@ -115,13 +128,13 @@ nav ul li a:hover {
 
 .bio-text h2 {
   color: #1e90ff;
-  font-size: 2rem; /* Larger heading */
+  font-size: 2rem;
   margin-bottom: 15px;
 }
 
 .bio-text p,
 .bio-text li {
-  font-size: 1.2rem; /* Increased content font size */
+  font-size: 1.2rem;
   line-height: 2;
   color: #f0f0f0;
 }
@@ -187,6 +200,8 @@ nav ul li a:hover {
   .bio {
     gap: 15px;
   }
+}
+
 }
 
 
